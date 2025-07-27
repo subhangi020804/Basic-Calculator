@@ -1,22 +1,19 @@
 # Basic-Calculator
-# 🎉 Portfolio Website – Internship Task 1 (Pinnacle Labs)
+# 🧮 Basic Calculator – Internship Task 2 (Pinnacle Labs)
 
-**Task 1 Completed!**
+**Task 2 Completed!**
 
-This project is a fully responsive **Portfolio Website** developed using **HTML, CSS, and JavaScript** as part of my internship at **Pinnacle Labs**. The goal was to design a modern, clean, and interactive portfolio showcasing front-end development skills.
+Proud to showcase the **Basic Calculator** I developed using **HTML, CSS, and JavaScript** as part of my internship at **Pinnacle Labs**. This project allowed me to explore the fundamentals of JavaScript logic, UI design, and DOM interaction.
 
-## 💡 What I Learned
+## 🔧 What I Learned
 
-- 💻 Built a user-friendly and responsive web layout
-- 🎨 Applied clean and modern UI using CSS styling
-- ⚙️ Implemented interactivity and dynamic behavior through JavaScript
-- 📱 Ensured cross-browser and cross-device compatibility
+- 🔢 Built core logic for basic arithmetic operations (add, subtract, multiply, divide)
+- 🎨 Designed a clean, modern, and responsive UI using HTML and CSS
+- ⚙️ Gained practical experience with **DOM manipulation** and **event handling** in JavaScript
 
 ## 🚀 Tech Stack
 
-- **HTML5** – Structure and content
-- **CSS3** – Styling, layout, and responsive design
-- **JavaScript** – Interactivity and DOM manipulation
-
-
+- **HTML5** – Structure and layout
+- **CSS3** – Styling and responsive design
+- **JavaScript** – Logic implementation and interactivity
 
