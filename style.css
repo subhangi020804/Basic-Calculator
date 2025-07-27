@@ -1,0 +1,166 @@
+:root {
+    --bg-color: #fff4e2;
+    --calc-bg: #fff1dc;
+    --btn-gradient-start: #f9c46b;
+    --btn-gradient-end: #fca652;
+    --equal-btn: #ffcc00;
+    --font-color: #362905;
+  }
+  body.dark-mode {
+    --bg-color: #0e0e0e;
+    --calc-bg: #171717;
+    --btn-gradient-start: #39022a;
+    --btn-gradient-end: #e79fd6;
+    --font-color: #a76a9a;
+}
+.heading {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--font-color);
+    font-weight: 600;
+  }
+  
+    body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .calculator-wrapper {
+    background-color: var(--calc-bg);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 320px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Add subtle line pattern using pseudo-element */
+  .calculator-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( 135deg,rgba(255, 255, 255, 0.1) 1px,transparent 1px );
+    background-size: 20px 20px;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .calculator {
+    position: relative;
+    z-index: 1; /* ensure calculator is above background lines */
+  }
+  
+  
+  .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .toggle-label {
+    font-size: 12px;
+    color: var(--font-color);
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 38px;
+    height: 20px;
+  }
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  input:checked + .slider {
+    background-color: #031625;
+  }
+  input:checked + .slider:before {
+    transform: translateX(18px);
+  }
+  
+  .calculator {
+    background-color: var(--calc-bg);
+    border-radius: 16px;
+  }
+  
+  .display {
+    background-color: transparent;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    text-align: right;
+    min-height: 60px;
+    color: var(--font-color);
+  }
+  
+  #expression {
+    font-size: 18px;
+    opacity: 0.6;
+  }
+  
+  #result {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    padding: 20px 0;
+  }
+  
+  .btn {
+    background: linear-gradient(145deg, var(--btn-gradient-start), var(--btn-gradient-end));
+    border: none;
+    border-radius: 12px;
+    padding: 18px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.1s;
+  }
+  
+  .btn:active {
+    transform: scale(0.97);
+  }
+  
+  .equals {
+    background-color: var(--equal-btn);
+    color: #000;
+    font-weight: bold;
+  }
+  
